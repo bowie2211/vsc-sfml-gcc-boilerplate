@@ -1,0 +1,1 @@
+# vsc-sfml-gcc-boilerplate
