@@ -44,11 +44,19 @@ Add the following entry to the `cmake-tools-kits.json` file:
 ```
 ## Step 2: Set Up Your Project
 
-1. Open the Command Palette again and type `CMake: Quick Start`.
-2. Enter a project name.
-3. Select the kit `MinGW-for-SFML`.
-4. Download the SFML library and place it in the `src` directory.
-
+1. Download the SFML library and place it in the `src` directory. (Folder Name SFML-2.6.1)
+2. Add the main.cpp file from this repo for a smoke test
+3. Open your project folder with Visual Studio Code
+4. Press `Ctrl + Shift + P` to open the Command Palette and type `CMake: Quick Start`.
+5. Enter a project name.
+6. Select `C++ Project Create C++Project`
+7. Select `Executable Create Executable`
+8. Skip CPAck and CTest by just klicking ok without selecting anything
+9. Press esc to skip the generation of a preset
+10. Close and start Visual Studio Code
+11. Press `Ctrl + Shift + P` to open the Command Palette and type `CMake: Quick Start`. 
+12. Select the kit `MinGW-for-SFML`.
+    
 ## Step 3: Edit CMakeLists.txt
 
 Finally, edit the CMakeLists.txt file as described in the project files to configure the project properly.
