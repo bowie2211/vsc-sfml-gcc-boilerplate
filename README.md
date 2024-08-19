@@ -1,29 +1,33 @@
 # vsc-sfml-gcc-boilerplate
 
-This repo is a starting point for people who want to use sfml for a project, using 
-visual studio code.
+This repository serves as a starting point for those who want to use SFML for a project with Visual Studio Code.
 
-It works for following prerequisites:
+## Prerequisites
 
-* Visual Studio Code installed with CMake Extension installed
-* MinGW that is required for the respective SFML lib (e.g. WinLibs MSVCRT 13.1.0 (64-bit) for SFML 2.6.1 64 Bit) is on the local machine
+To use this boilerplate, ensure the following are installed on your machine:
 
+* Visual Studio Code with the CMake extension installed.
+* MinGW, compatible with the specific SFML library you plan to use (e.g., WinLibs MSVCRT 13.1.0 (64-bit) for SFML 2.6.1 64-bit).
 
-Step 1:
-Make the mingw available for vsc 
-I have done this by adding an entry in cmake-tools-kits.json file with the following steos:
+## Step 1: Make MinGW Available for VSC
 
-Step 1.1: Open the VSC Command Palette: Ctrl + Shift + P 
-Step 1.2: Type in: CMake: Edit User-Local CMake Kits
-Step 1.3: Add the following entry to cmake-tools-kits.json
+You can make MinGW available in Visual Studio Code by adding an entry to the `cmake-tools-kits.json` file. Follow these steps:
 
-(Remark: Put your path to 
-gcc.exe for "C" 
-g++.exe for "C++"
-and
-mingw/bin for PATH)
-----
+### Step 1.1: Open the VSC Command Palette
 
+Press `Ctrl + Shift + P` to open the Command Palette.
+
+### Step 1.2: Edit CMake Kits
+
+Type in: `CMake: Edit User-Local CMake Kits`
+
+### Step 1.3: Add the MinGW Entry
+
+Add the following entry to the `cmake-tools-kits.json` file:
+
+*(Note: Replace the paths with the actual paths on your machine for `gcc.exe`, `g++.exe`, and `mingw/bin`)*
+
+```json
 {
     "name": "MinGW Custom",
     "compilers": {
@@ -38,12 +42,13 @@ mingw/bin for PATH)
     }
 }
 
-----
+## Step 2: Set Up Your Project
 
-Then Open the command palette and type in Quick start
-Give a project name 
-Select the Kit mingw-for sfml
-Download the SFML Library
-Add it below src
+1. Open the Command Palette again and type `CMake: Quick Start`.
+2. Enter a project name.
+3. Select the kit `MinGW-for-SFML`.
+4. Download the SFML library and place it in the `src` directory.
 
-Edit the CMakeLists.txt as described in the file in that project
+## Step 3: Edit CMakeLists.txt
+
+Finally, edit the CMakeLists.txt file as described in the project files to configure the project properly.
