@@ -41,7 +41,7 @@ Add the following entry to the `cmake-tools-kits.json` file:
         "name": "MinGW Makefiles"
     }
 }
-´´´
+```
 ## Step 2: Set Up Your Project
 
 1. Open the Command Palette again and type `CMake: Quick Start`.
